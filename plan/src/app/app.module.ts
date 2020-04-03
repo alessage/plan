@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { VocibilancioComponent } from './vocibilancio/vocibilancio.component';
 import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.component';
 import { HttpClientModule }  from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule }  from '@angular/common/http';
     MenuComponent,
     HeaderComponent,
     VocibilancioComponent,
-    NewvocebilancioComponent
+    NewvocebilancioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
