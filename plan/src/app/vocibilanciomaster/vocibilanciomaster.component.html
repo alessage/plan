@@ -1,0 +1,27 @@
+<p>VOCI DI BILANCIO MASTER</p>
+<table [ngStyle]="tableStyle">
+  <tr>
+      <th [ngStyle]="tableStyle">Voce ID</th>
+      <th [ngStyle]="tableStyle">Prefisso</th>
+      <th [ngStyle]="tableStyle">Descrizione</th>
+   </tr>
+  <ng-container *ngFor="let voce of vociBilancioMaster; let i = index">        
+    <tr mydirective>
+        <td [ngStyle]="tableStyle">
+          <span>{{voce.voce}}</span>
+        </td>
+        <td [ngStyle]="tableStyle" >        
+          <span>{{voce.prefisso}}</span>
+        </td>
+        <td [ngStyle]="tableStyle">
+          <span>{{voce.descrizione}}</span>
+        </td>
+    </tr>
+  </ng-container>
+</table>
+<p></p>
+Voce ID: <input width="50px" type="text" [(ngModel)] ='vociBilancioMaster.voce'>
+Prfeisso: <input width="50px" type="text" [(ngModel)] ='vociBilancioMaster.prefisso'>
+Descrizione: <input width="50px" type="text" [(ngModel)] ='vociBilancioMaster.descrizione'>
+<p></p>
+<input type="button" value="Aggiungi" (click)="aggiungi()"/>
