@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { VocibilancioComponent } from './vocibilancio/vocibilancio.component';
 import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.component';
 //import { VocibilanciomasterComponent } from './vocibilanciomaster/vocibilanciomaster.component';
+import { HttpClientModule }  from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
