@@ -11,6 +11,7 @@ import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.comp
 import { HttpClientModule }  from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { VocibilanciomasterComponent } from './vocibilanciomaster/vocibilanciomaster.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { VocibilanciomasterComponent } from './vocibilanciomaster/vocibilancioma
     NewvocebilancioComponent,
     //VocibilanciomasterComponent,
     HomeComponent,
-    VocibilanciomasterComponent
+    VocibilanciomasterComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
