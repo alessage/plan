@@ -1,0 +1,19 @@
+<p>
+  vocibilancio works!
+</p>
+
+<p>VOCI DI BILANCIO</p>
+<table>
+  <thead>
+      <th>VOCE</th>
+      <th>CODICI</th>
+    </thead>
+    <tbody></tbody>
+<ng-container *ngFor="let voce of vociBilancio; let i = index   ">
+  <tr>
+      <td>{{voce.descrizione }}</td>
+      <td>{{voce.codice }}</td>
+  </tr>
+</ng-container>
+</tbody>
+</table>
