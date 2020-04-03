@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { VocibilancioComponent } from './vocibilancio/vocibilancio.component';
 import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.component';
+import { HttpClientModule }  from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
