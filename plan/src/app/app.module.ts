@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './header/header.component';
 import { VocibilancioComponent } from './vocibilancio/vocibilancio.component';
 import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NewvocebilancioComponent } from './newvocebilancio/newvocebilancio.comp
     MenuComponent,
     HeaderComponent,
     VocibilancioComponent,
-    NewvocebilancioComponent
+    NewvocebilancioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
